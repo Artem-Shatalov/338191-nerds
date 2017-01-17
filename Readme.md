@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Артем Шаталов](https://up.htmlacademy.ru/htmlcss/16/user/338191).
-* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nicolamarkelov).
+* Наставник: [Николай Маркелов](https://up.htmlacademy.ru/htmlcss/16/user/235291).
 
 ---
 
