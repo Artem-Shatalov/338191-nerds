@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
     <header class="main-header">
-      <img src="img/nerds-logo.png" width="160" height="65" alt="NERDS">
       <div class="container">
+
+        <div class="logo-nerds">
+          <img src="img/nerds-logo.png" width="160" height="65" alt="NERDS">
+        </div>
+
         <nav class="main-navigation">
-          <ul>
+          <ul class="navigation">
             <li>
               <a href="#">Студия</a>
             </li>
@@ -18,131 +23,110 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="inner.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="user-cart">
-          <a href="#" class="cart">Корзина</a>
+        <div class="cart">
+          <a href="#">Корзина</a>
         </div>
       </div>
-      <section class="header-content">
-        <h2>Магазин готовых шаблонов</h2>
+
+      <section class="container">
+        <h1>Магазин готовых шаблонов</h1>
       </section>
     </header>
     <main class="container">
-      <div class="index-product-range">
-        <h2>Стоимость:</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <input type="range" name="product-range" id="product-range">
-          <input type="text" name="product-range-price-from" id="product-range-from" placeholder="0">
-          <input type="text" name="product-range-price-to" id="product-range-to" placeholder="15000">
-          <label for="product-range-price-to">-</label>
-        </form>
+        <div class="index-content-left">
+          <div class="index-product-range">
+            <h2>Стоимость:</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <input type="range" name="product-range" id="product-range">
+              <input type="text" name="product-range-price-from" id="product-range-from" placeholder="0">
+              <input type="text" name="product-range-price-to" id="product-range-to" placeholder="15000">
+              <label for="product-range-price-to">-</label>
+            </form>
+          </div>
+
+          <div class="index-product-class-1">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <h2>Сетка</h2>
+                <input type="radio" name="Adaptive" id="Adaptive" checked>
+                <label for="Adaptive">Адаптивная</label><br />
+
+                <input type="radio" name="Fixed" id="Fixed">
+                <label for="Fixed">Фиксированная</label><br />
+
+                <input type="radio" name="Rubber" id="Rubber">
+                <label for="Rubber">Резиновая</label><br />
+            </form>
+          </div>
+          <div class="index-product-class-2">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <h2>Особенности</h2>
+                <input type="checkbox" name="slider" id="slider" checked>
+                <label for="slider">Слайдер</label><br />
+
+                <input type="checkbox" name="advantages" id="advantages">
+                <label for="advantages">Блок преимуществ</label><br />
+
+                <input type="checkbox" name="news" id="news" checked>
+                <label for="news">Новости</label><br />
+
+                <input type="checkbox" name="gallery" id="gallery">
+                <label for="gallery">Галерея</label><br />
+
+                <input type="checkbox" name="cart" id="cart">
+                <label for="cart">Корзина</label><br />
+
+                <input type="submit" name="DEMONSTRATE" id="DEMONSTRATE" value="ПОКАЗАТЬ">
+              </form>
+          </div>
       </div>
-      <div class="index-content-left">
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <h2>Сетка</h2>
-              <input type="radio" name="Adaptive" id="Adaptive" checked>
-              <label for="Adaptive">Адаптивная</label>
 
-              <input type="radio" name="Fixed" id="Fixed">
-              <label for="Fixed">Фиксированная</label>
-
-              <input type="radio" name="Rubber" id="Rubber">
-              <label for="Rubber">Резиновая</label><br />
-          </form>
-
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <h2>Сетка<h2>
-            <input type="checkbox" name="slider" id="slider" checked>
-            <label for="slider">Слайдер</label><br />
-
-            <input type="checkbox" name="advantages" id="advantages">
-            <label for="advantages">Блок преимуществ</label><br />
-
-            <input type="checkbox" name="news" id="news" checked>
-            <label for="news">Новости</label><br />
-
-            <input type="checkbox" name="gallery" id="gallery">
-            <label for="gallery">Галерея</label><br />
-
-            <input type="checkbox" name="cart" id="cart">
-            <label for="cart">Корзина</label><br />
-
-            <input type="submit" name="DEMONSTRATE" id="DEMONSTRATE" value="ПОКАЗАТЬ">
-          </form>
-      </div>
       <div class="index-content-center">
         <div class="product-sort">
-          <h4>Сортировать:</h4>
-            <ul>
+          <div class="sort-title">
+            Сортировать:
+          </div>
+            <ul class="sort">
               <li>
                 <a href="#">По цене</a>
-              <li>
+              </li>
               <li>
                 <a href="#">По типу</a>
-              <li>
+              </li>
               <li>
                 <a href="#">По названию</a>
-              <li>
+              </li>
             </ul>
         </div>
-        <article class="product-card">
+
+        <article class="product-card-1">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-          <div class="product-about">
-            <h4>Sedona</h4>
-            <p>Информационный сайт для туристов</p>
-            <a href="#" class="btn">9900 руб.</a>
-          </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card-2">
           <img src="img/img-pink.jpg" width="360" height="576" alt="Pink app">
-          <div class="product-about">
-            <h4>Pink app</h4>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#" class="btn">9900 руб.</a>
-          </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card-3">
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinski">
-          <div class="product-about">
-            <h4>Borodinski</h4>
-            <p>Сайт салоны красоты.Для мужчин, да.</p>
-            <a href="#" class="btn">9900 руб.</a>
-          </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card-4">
           <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-          <div class="product-about">
-            <h4>Mishka</h4>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a href="#" class="btn">9900 руб.</a>
-          </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card-5">
           <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
-          <div class="product-about">
-            <h4>A Plus</h4>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a href="#" class="btn">9900 руб.</a>
-          </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card-6">
           <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
-          <div class="product-about">
-            <h4>КВАСТ</h4>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="#" class="btn">9900 руб.</a>
-          </div>
         </article>
 
         <div class="pagination">
@@ -152,28 +136,27 @@
           <a href="#" class="btn">Следующая</a>
         </div>
       </div>
-      <section class="map">
-        <h4>NЁRDS DESIGN STUDIO</h4>
-        <address class="contacts">
+    </main>
+    <div class="index-content-map">
+        <div class="contacts">
+          <h4>NЁRDS DESIGN STUDIO</h4>
           191186, Санкт-Петербург,<br />
           ул. Б. Конюшенная, д. 19/8<br />
-        </address>
-        тел. +7 (812) 275-75-75<br />
-        <a href="#" class="btn">Напиши нам</a>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <div class="container">
+
+          тел. +7 (812) 275-75-75<br />
+          <a href="#" class="btn">Напиши нам</a>
+        </div>
+    </div>
+    <footer class="container">
         <section class="footer-social">
-          <a href="#" class="social-btn social-btn-vk"><img src="img/vk-icon.png" width="21" height="21" alt="ВКонтакте"></a>
-          <a href="#" class="social-btn social-btn-fb"><img src="img/fb-icon.png" width="21" height="21"  alt="Фейсбук"></a>
-          <a href="#" class="social-btn social-btn-inst"><img src="img/insta-icon.png" width="21" height="21"  alt="Инстаграм"></a>
+          <a href="#" class="social-btn social-btn-vk"><img src="img/vk-icon.png" alt="ВКонтакте"></a>
+          <a href="#" class="social-btn social-btn-fb"><img src="img/fb-icon.png" alt="Фейсбук"></a>
+          <a href="#" class="social-btn social-btn-inst"><img src="img/insta-icon.png" alt="Инстаграм"></a>
         </section>
         <section class="footer-copyright">
           <h2>Давайте дружить, это выгодно!</h2>
           Скидка 10% для друзей из социальных сетей.
         </section>
-      </div>
     </footer>
   </body>
 </html>
