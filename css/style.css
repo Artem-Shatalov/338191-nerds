@@ -18,7 +18,9 @@ body {
     display: table;
     clear: both;
   }
-
+  footer.container {
+    height: 217px;
+  }
 /*Global Styles*/
 
 /*Header*/
@@ -294,14 +296,19 @@ body {
       float: left;
       width: 80px;
       height: 80px;
+      margin-top: 80px;
+      margin-left: 20px;
       background-color: #e1e1e1;
       border-radius: 37px;
+      vertical-align: middle;
       outline: 2px solid red;
     }
 
     .footer-copyright {
       float: left;
       max-width: 560px;
+      margin-top: 80px;
+      margin-left: 20px;
       outline: 2px solid red;
     }
   /*main-footer*/
