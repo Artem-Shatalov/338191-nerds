@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,500&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main-header">
@@ -35,6 +35,41 @@
           <a href="#">Корзина</a>
         </div>
       </div>
+      <div class="slider">
+          <div class="slider-controls">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого, скрупулезно</div>
+                <p>Математически выверенный дизайн<br>
+    для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Дорого, скрупулезно</div>
+                <p>Математически выверенный дизайн<br>
+    для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Скрупулезно</div>
+                <p>Математически выверенный дизайн<br>
+    для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+
+
+          </div>
+      </div>
     </header>
     <main class="container">
       <div class="index-content-request">
@@ -44,7 +79,7 @@
             <h4>Веб-сайты</h4>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           </div>
-          <a href="#" class="btn">Заказать</a>
+          <a href="#" class="btn red">Заказать</a>
         </div>
 
         <div class="product">
@@ -53,7 +88,7 @@
             <h4>Приложения</h4>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           </div>
-          <a href="#" class="btn">Заказать</a>
+          <a href="#" class="btn green">Заказать</a>
         </div>
 
         <div class="product-last">
@@ -62,7 +97,7 @@
             <h4>Презентации</h4>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           </div>
-          <a href="#" class="btn">Заказать</a>
+          <a href="#" class="btn yellow">Заказать</a>
         </div>
       </div>
 
@@ -72,7 +107,7 @@
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <div class="composition">
             <h4>Выполняем заказы на разработку:</h4>
-            <ul>
+            <ul class="composition-list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -119,23 +154,26 @@
     </main>
     <div class="index-content-map">
         <div class="contacts">
-          <h4>NЁRDS DESIGN STUDIO</h4>
-          191186, Санкт-Петербург,<br />
-          ул. Б. Конюшенная, д. 19/8<br />
-
-          тел. +7 (812) 275-75-75<br />
+          <section class="contacts-title">
+            <h4>NЁRDS DESIGN STUDIO</h4>
+          </section>
+          <section class="contacts-about">
+            <p>191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8</p>
+            тел. +7 (812) 275-75-75
+        </section>
           <a href="#" class="btn">Напиши нам</a>
         </div>
     </div>
     <footer class="container">
         <section class="footer-social">
-          <a href="#" class="social-btn social-btn-vk"><img src="img/vk-icon.png" alt="ВКонтакте"></a>
-          <a href="#" class="social-btn social-btn-fb"><img src="img/fb-icon.png" alt="Фейсбук"></a>
-          <a href="#" class="social-btn social-btn-inst"><img src="img/insta-icon.png" alt="Инстаграм"></a>
+            <a href="#" class="social-btn social-btn-vk"><img src="img/vk-icon.png" alt="ВКонтакте"></a>
+            <a href="#" class="social-btn social-btn-fb"><img src="img/fb-icon.png" alt="Фейсбук"></a>
+            <a href="#" class="social-btn social-btn-inst"><img src="img/insta-icon.png" alt="Инстаграм"></a>
         </section>
         <section class="footer-copyright">
           <h2>Давайте дружить, это выгодно!</h2>
-          Скидка 10% для друзей из социальных сетей.
+          <h4>Скидка 10% для друзей из социальных сетей.</h4>
         </section>
     </footer>
   </body>
