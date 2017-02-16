@@ -1,307 +1,88 @@
 body {
-  min-width: 900px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
+  line-height: 24px;
   color: #283136;
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
-/*Global Styles*/
-  .container {
-    margin: 0;
-    padding: 0;
-    outline: 2px solid black;
-  }
-  .container-shop {
-    height: 2166px;
-    margin: 0;
-    padding: 0;
-    outline: 2px solid black;
-  }
-/*Global Styles*/
+/*Сетка*/
 
-/*Header*/
-  .main-header {
-    display: block;
-    height: 545px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-    outline: 2px solid green;
-  }
-  .main-header .container{
-    height: 65px;
-  }
-  /*Navigation*/
-    .logo-nerds {
-      display: block;
-      float: left;
-      height: 65px;
-      width: 160px;
-      margin-right: 200px;
-      outline: 2px solid red;
-    }
-    .main-navigation {
-      display: inline-block;
-      float: left;
-      height: 65px;
-      width: 440px;
-      outline: 2px solid red;
-    }
-    ul.navigation li {
-      text-align: center;
-      display: inline;
-      float: left;
-      height: 18px;
-      margin-top: 34px;
-      margin-right: 49px;
-      padding: 0;
-      outline: 2px solid red;
-    }
-    ul.navigation li:last-child {
-      margin-right: 0;
-    }
-    ul.navigation {
-     margin: 0px;
-     padding: 0px;
-    }
-    .cart {
-      display: inline;
-      float: right;
-      margin-top: 34px;
-    }
-  /*Navigation*/
-  .header-title {
-    margin-right: 200px;
-    margin-left: 200px;
-    outline: 2px solid red;
-  }
-/*Header*/
+.container {
+  width: 740px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
-/*Main*/
-  /*Left-Content*/
-  .index-content-left {
-    display: inline-block;
-    width: 260px;
-    margin-right: 140px;
-    padding-left: 20px;
-    padding-top: 63px;
-    outline: 2px solid red;
-  }
+.main-header {
+  margin-bottom: 60px;
+}
 
-  .index-product-range {
-    width: 260px;
-    outline: 2px solid red;
-  }
+.main-navigation {
+  float: left;
+  width: 780px;
+  min-height: 132px;
+}
 
-  .index-product-class-1 {
-    max-width: 260px;
-    outline: 2px solid red;
-  }
-  .index-product-class-2 {
-    max-width: 260px;
-    outline: 2px solid red;
-  }
-  /*Left-Content*/
+.header-content {
+  float: left;
+  width: 380px;
+  min-height: 297px;
+}
 
-  /*index-content-center*/
-    .index-content-center {
-      float: right;
-      width: 780px;
-      outline: 2px solid blue;
-      min-height: 2166px;
-    }
-    .product-sort {
-      display: inline-block;
-      width: 100%;
-      outline: 2px solid blue;
-    }
-    .sort-title {
-      display: inline-block;
-      width: 160px;
-      margin-right: 240px;
-      margin-top: 60px;
-      font-size: 18px;
-      font-weight: bold;
-      outline: 2px solid blue;
-    }
-    .sort {
-      display: inline;
-      float: right;
-      height: 14px;
-      margin-top: 60px;
-      outline: 2px solid blue;
-    }
-    .sort li{
-      display: inline-block;
-      margin-right: 26px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .sort a {
-      text-decoration: none;
-      color: black;
-    }
-    .product-card-1, .product-card-3, .product-card-5 {
-      display: inline-block;
-      width: 360px;
-      height: 576px;
-      position: relative;
-      margin-right: 20px;
-      margin-bottom: 80px;
-      vertical-align: top;
-      cursor: pointer;
-      outline: 2px solid green;
-    }
-    .product-card-2, .product-card-4, .product-card-6 {
-      display: inline-block;
-      width: 360px;
-      height: 576px;
-      position: relative;
-      margin-left: 20px;
-      margin-bottom: 80px;
-      vertical-align: top;
-      cursor: pointer;
-      outline: 2px solid red;
-    }
-  /*index-content-center*/
+.index-content-request {
+  float: left;
+  width: 1100px;
+  min-height: 380px
+}
 
-  /*index-content-request*/
-    .index-content-request {
-      display: block;
-      min-height: 507px;
-      margin-left: 20px;
-      margin-right: 20px;
-      padding-top: 80px;
-      outline: 2px solid yellow;
-    }
-    .product {
-      display: inline-block;
-      float: left;
-      width: 300px;
-      min-height: 347px;
-      margin-right: 100px;
-      outline: 2px solid green;
-    }
-    .product-title {
-      display: inline-block;
-      width: 300px;
-      min-height: 37px;
-      margin-top: 28px;
-      margin-bottom: 38px;
-      outline: 2px solid yellow;
-    }
-  /*index-content-request*/
+.product-card {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  min-height: 348px;
+}
 
-  /*index-content-about*/
-    .index-content-about {
-      display: block;
-      min-height: 525px;
-      margin-left: 20px;
-      margin-right: 20px;
-      outline: 2px solid blue;
-    }
+.index-content-about {
+  width: 1160px;
+  min-height: 530px;
+}
 
-    .content-about-left {
-      float: left;
-      padding-top: 80px;
-      margin-right: 140px;
-      max-width: 660px;
-      outline: 2px solid blue;
-    }
+.content-about-left {
+  float: left;
+  width: 800px;
+  min-height: 530px;
+}
 
-    .content-about-right {
-      float: right;
-      max-width: 360px;
-      outline: 2px solid blue;
-    }
+.content-about-right {
+  float: right;
+  width: 380px;
+  min-height: 530px;
+}
+.index-content-partners {
+  width: 1160px;
+  min-height: 180;
+}
 
-    .about-percent {
-      float: left;
-      margin-right: 20px;
-      width: 100px;
-      outline: 2px solid blue;
-    }
+.logos {
+  margin-right: 36px;
+}
 
-    .percent {
-      padding: 0;
-      text-align: center;
-      font-size: 45px;
-      font-weight: bold;
-    }
-  /*index-content-about*/
+.index-content-map {
+  width: 1440px;
+  min-height: 440px;
+}
 
-  /*index-content-partners*/
-    .index-content-partners {
-      padding-top: 62px;
-      padding-left: 31px;
-      margin-right: 20px;
-      margin-left: 20px;
-      min-height: 180px;
-      outline: 2px solid red;
-    }
-    .logos{
-      display: inline-block;
-      width: 260px;
-      margin-right: 40px;
-      text-align: center;
-      outline: 2px solid red;
-    }
-  /*index-content-partners*/
+.contacts {
+  width: 320px;
+  min-height: 310px;
+}
 
-  /*index-content-map*/
-    .index-content-map {
-      display: block;
-      height: 416px;
-      min-width: 1440px;
-      position: relative;
-      background-size: cover;
-      background: url(../img/map.jpg) no-repeat 50% 0;
-    }
-
-
-    .contacts {
-      width:319px;
-      height: 308px;
-      margin-left: 20px;
-      position:absolute;
-      top:87px;
-      text-align: center;
-      background: white;
-    }
-  /*index-content-map*/
-
-  /*main-footer*/
-    .main-footer {
-      display: block;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 101px;
-      height: 217px;
-      outline: 2px solid red;
-    }
-
-    .footer-social a img{
-      float: left;
-      width: 80px;
-      height: 80px;
-      background-color: #e1e1e1;
-      border-radius: 37px;
-      outline: 2px solid red;
-    }
-
-    .footer-copyright {
-      float: left;
-      max-width: 560px;
-      outline: 2px solid red;
-    }
-  /*main-footer*/
-/*Main*/
+.main-footer {
+  width: 1440px;
+  min-height: 220px;A
+}
+/*Сетка*/
 
 h1 {
   font-size: 55px;
@@ -312,5 +93,5 @@ h2 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
 }

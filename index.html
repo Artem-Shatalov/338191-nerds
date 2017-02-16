@@ -4,18 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
+      <img src="img/nerds-logo.png" width="160" height="65" alt="NERDS">
       <div class="container">
-
-        <div class="logo-nerds">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="NERDS">
-        </div>
-
         <nav class="main-navigation">
-          <ul class="navigation">
+          <ul>
             <li>
               <a href="#">Студия</a>
             </li>
@@ -30,15 +25,17 @@
             </li>
           </ul>
         </nav>
-
-        <div class="cart">
-          <a href="#">Корзина</a>
-        </div>
+        <a href="#" class="cart">Корзина</a>
       </div>
+      <section class="header-content">
+        <h1>Долго, дорого, скрупулезно.</h1>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a href="#" class="btn">Узнать больше</a>
+      </section>
     </header>
     <main class="container">
       <div class="index-content-request">
-        <div class="product">
+        <div class="product-card">
           <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
           <div class="product-title">
             <h4>Веб-сайты</h4>
@@ -47,7 +44,7 @@
           <a href="#" class="btn">Заказать</a>
         </div>
 
-        <div class="product">
+        <div class="product-card">
           <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
           <div class="product-title">
             <h4>Приложения</h4>
@@ -55,7 +52,7 @@
           </div>
           <a href="#" class="btn">Заказать</a>
         </div>
-        <div class="product">
+        <div class="product-card">
           <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентация">
           <div class="product-title">
             <h4>Презентации</h4>
@@ -64,7 +61,6 @@
           <a href="#" class="btn">Заказать</a>
         </div>
       </div>
-
       <div class="index-content-about">
         <div class="content-about-left">
           <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h1>
@@ -102,40 +98,39 @@
        </div>
      </div>
        <div class="index-content-partners">
-           <div class="logos">
-             <img src="img/logo-1.png" width="199" height="68" alt="html-academy">
+         <div class="logos">
+           <img src="img/logo-1.png" width="199" height="68" alt="html-academy">
+           <img src="img/logo-2.png" width="199" height="68" alt="BORODINSKI">
+           <img src="img/logo-3.png" width="199" height="68" alt="PINK">
+           <img src="img/logo-4.png" width="199" height="68" alt="MISHKA">
+         </div>
+       </div>
+       <div class="index-content-map">
+         <section class="map">
+           <img src="nerds-index.jpg" width="1440" height="416" alt="Карта">
+           <div class="contacts">
+             <h4>NЁRDS DESIGN STUDIO</h4>
+             191186, Санкт-Петербург,<br />
+             ул. Б. Конюшенная, д. 19/8<br />
+
+             тел. +7 (812) 275-75-75<br />
+             <a href="#" class="btn">Напиши нам</a>
            </div>
-           <div class="logos">
-             <img src="img/logo-2.png" width="209" height="90" alt="BORODINSKI">
-           </div>
-           <div class="logos">
-             <img src="img/logo-3.png" width="185" height="52" alt="PINK">
-           </div>
-           <div class="logos">
-             <img src="img/logo-4.png" width="173" height="84" alt="MISHKA">
-           </div>
+        </section>
        </div>
     </main>
-    <div class="index-content-map">
-        <div class="contacts">
-          <h4>NЁRDS DESIGN STUDIO</h4>
-          191186, Санкт-Петербург,<br />
-          ул. Б. Конюшенная, д. 19/8<br />
-
-          тел. +7 (812) 275-75-75<br />
-          <a href="#" class="btn">Напиши нам</a>
-        </div>
-    </div>
     <footer class="main-footer">
+      <div class="container">
         <section class="footer-social">
-          <a href="#" class="social-btn social-btn-vk"><img src="img/vk-icon.png" alt="ВКонтакте"></a>
-          <a href="#" class="social-btn social-btn-fb"><img src="img/fb-icon.png" alt="Фейсбук"></a>
-          <a href="#" class="social-btn social-btn-inst"><img src="img/insta-icon.png" alt="Инстаграм"></a>
+          <a href="#" class="social-btn social-btn-vk"><img src="http://placehold.it/150x100" alt="ВКонтакте"></a>
+          <a href="#" class="social-btn social-btn-fb"><img src="http://placehold.it/150x100" alt="Фейсбук"></a>
+          <a href="#" class="social-btn social-btn-inst"><img src="http://placehold.it/150x100" alt="Инстаграм"></a>
         </section>
         <section class="footer-copyright">
           <h2>Давайте дружить, это выгодно!</h2>
           Скидка 10% для друзей из социальных сетей.
         </section>
+      </div>
     </footer>
   </body>
 </html>
