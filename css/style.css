@@ -11,8 +11,8 @@ body {
 
 /*Global Styles*/
   .container {
-    width: 1200px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     outline: 2px solid black;
   }
   .container-shop {
@@ -27,6 +27,8 @@ body {
   .main-header {
     display: block;
     height: 545px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
@@ -150,7 +152,7 @@ body {
       width: 360px;
       height: 576px;
       position: relative;
-      padding-right: 20px;
+      margin-right: 20px;
       margin-bottom: 80px;
       vertical-align: top;
       cursor: pointer;
@@ -161,7 +163,7 @@ body {
       width: 360px;
       height: 576px;
       position: relative;
-      padding-left: 20px;
+      margin-left: 20px;
       margin-bottom: 80px;
       vertical-align: top;
       cursor: pointer;
@@ -173,8 +175,8 @@ body {
     .index-content-request {
       display: block;
       min-height: 507px;
-      padding-left: 20px;
-      padding-right: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
       padding-top: 80px;
       outline: 2px solid yellow;
     }
@@ -184,14 +186,6 @@ body {
       width: 300px;
       min-height: 347px;
       margin-right: 100px;
-      outline: 2px solid green;
-    }
-    .product-last{
-      display: inline-block;
-      float: left;
-      width: 300px;
-      min-height: 347px;
-      margin-right: 60px;
       outline: 2px solid green;
     }
     .product-title {
@@ -208,8 +202,8 @@ body {
     .index-content-about {
       display: block;
       min-height: 525px;
-      padding-left: 20px;
-      padding-right: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
       outline: 2px solid blue;
     }
 
@@ -229,7 +223,7 @@ body {
 
     .about-percent {
       float: left;
-      padding-right: 20px;
+      margin-right: 20px;
       width: 100px;
       outline: 2px solid blue;
     }
@@ -245,22 +239,17 @@ body {
   /*index-content-partners*/
     .index-content-partners {
       padding-top: 62px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 31px;
+      margin-right: 20px;
+      margin-left: 20px;
       min-height: 180px;
-      text-align: center;
       outline: 2px solid red;
     }
-    .logos {
+    .logos{
       display: inline-block;
       width: 260px;
       margin-right: 40px;
-      vertical-align: middle;
-      outline: 2px solid red;
-    }
-    .logos-last {
-      display: inline-block;
-      vertical-align: middle;
+      text-align: center;
       outline: 2px solid red;
     }
   /*index-content-partners*/
@@ -269,16 +258,17 @@ body {
     .index-content-map {
       display: block;
       height: 416px;
+      min-width: 1440px;
       position: relative;
-      background: url(../img/map.jpg) no-repeat 50% 0;
       background-size: cover;
+      background: url(../img/map.jpg) no-repeat 50% 0;
     }
 
 
     .contacts {
       width:319px;
       height: 308px;
-      padding-left: 20px;
+      margin-left: 20px;
       position:absolute;
       top:87px;
       text-align: center;
@@ -315,7 +305,6 @@ body {
 
 h1 {
   font-size: 55px;
-  line-height: 1em;
 }
 
 h2 {
