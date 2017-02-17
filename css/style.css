@@ -17,24 +17,6 @@ body {
     display: table;
     clear: both;
   }
-  a.red {
-    background: #fb565a;
-  }
-  a.green {
-    background: #00ca74;
-  }
-  a.yellow {
-    background: #efc84a;
-  }
-  a.gray {
-    background: #eeeeee;
-  }
-  a.page {
-    border-bottom: 2px solid red;
-  }
-  input.gray {
-    background: #eeeeee;
-  }
 /*Global Styles*/
 
 /*Header*/
@@ -87,7 +69,7 @@ body {
       float: right;
       margin-top: 34px;
     }
-    .main-header a{
+    .main-header a {
       color: black;
       text-decoration: none;
     }
@@ -293,6 +275,7 @@ body {
       width: 25px;
       height: 25px;
       background: url(../img/radio-off.png) no-repeat 0 0;
+      transition: 0.5s;
   }
   input[type="radio"]:checked+label:after {
     content: "";
@@ -302,6 +285,7 @@ body {
     width: 25px;
     height: 25px;
     background: url(../img/radio-on.png) no-repeat 0 0;
+    transition: 0.5s;
   }
   label {
     cursor: pointer;
@@ -316,6 +300,7 @@ body {
     top: 10px;
     width: 27px;
     height: 23px;
+    border: 0px;
     background: url(../img/checkbox-off.png) no-repeat 0 0;
   }
   input[type="checkbox"]:checked+label:after {
@@ -397,44 +382,6 @@ body {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       cursor: pointer;
-    }
-      a.num{
-      display: inline-block;
-      width: 40px;
-      height: 28px;
-      padding: 10px;
-      padding-top:22px;
-      margin-right: 5px;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 1.5;
-      text-align: center;
-      color: #000;
-      background-color: inherit;
-      border: 3px solid #f1f1f1;
-      border-radius: 3px;
-    }
-    a.num:hover{
-      color: white;
-    }
-    a.next {
-      display: inline-block;
-      width: 250px;
-      height: 28px;
-      padding: 10px;
-      padding-top: 22px;
-      margin-right: 5px;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 1.5;
-      text-align: center;
-      color: #000;
-      background-color: inherit;
-      border: 3px solid #f1f1f1;
-      border-radius: 3px;
-    }
-    a.next:hover{
-      color: white;
     }
   /*index-content-center*/
 
@@ -613,6 +560,15 @@ body {
       background-color: #e1e1e1;
       margin-right: 11px;
       border-radius: 30px;
+      transition: 1.2s;
+    }
+    .social-btn:hover{
+      background: #e74246;
+      transition: 0.7s;
+    }
+    .social-btn:active{
+      opacity: 0.8;
+      transition: 0.7s;
     }
     .social-btn-vk img{
       position: relative;
@@ -671,12 +627,12 @@ body {
       transition: 1s;
     }
     a.btn:hover {
-      background: black;
+      background: #e74246;
       transition: 1s;
     }
     a.btn:active {
-      background: rgb(33,147,90);
-      box-shadow: 0 3px rgb(33,147,90) inset;
+      background:#b63538;
+      color:#d08384;
     }
     input.btn:hover {
       background: black;
@@ -686,6 +642,139 @@ body {
       background: rgb(33,147,90);
       box-shadow: 0 3px rgb(33,147,90) inset;
     }
+    a.btn-nav:hover {
+      color: #f87f81;
+      transition: 0.3s;
+    }
+    a.btn-nav {
+      color: black;
+      transition: 1.5s;
+    }
+    a.red {
+      background: #fb565a;
+    }
+    a.green {
+      background: #00ca74;
+      transition: 1s;
+    }
+    a.green:hover {
+      background:#01a25e;
+    }
+    a.green:active {
+      background:#009053;
+      color:#43ad80;
+      transition: 1s;
+    }
+    a.yellow {
+      background: #efc84a;
+    }
+    a.yellow:hover {
+      background: #d6ae2c
+    }
+    a.gray {
+      background: #eeeeee;
+    }
+    a.page {
+      border-bottom: 3px solid red;
+    }
+    a.btn-logo:hover {
+      opacity: 0.6;
+      transition: 0.5s;
+    }
+    a.btn-logo {
+      opacity: 1;
+      transition: 0.5s;
+    }
+    input.gray {
+      color: black;
+      background: #eeeeee;
+    }
+    .index-content-partners a {
+      opacity: 0.3;
+      transition: 1s;
+    }
+    .index-content-partners a:hover {
+      opacity: 1;
+      transition: 1s;
+    }
+    .index-content-partners a:active {
+      opacity: 0.3;
+      transition: 1s;
+    }
+    a.num {
+    display: inline-block;
+    width: 40px;
+    height: 28px;
+    padding: 10px;
+    padding-top:22px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+    background-color: #dfdfdf;
+    border: 3px solid #f1f1f1;
+    border-radius: 3px;
+  }
+  a.next:hover{
+    background-color: #b9b9b5;
+  }
+  a.num:hover {
+    background-color: #b9b9b5;
+  }
+  a.activ {
+    background-color: inherit;
+  }
+  a.next {
+    display: inline-block;
+    width: 250px;
+    height: 28px;
+    padding: 10px;
+    padding-top: 22px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+    background-color: inherit;
+    border: 3px solid #f1f1f1;
+    border-radius: 3px;
+  }
+  .product-about {
+    opacity: 0;
+    transition: 0.8s;
+  }
+  .hvr:hover .product-about {
+    opacity: 1;
+    transition: 0,5s;
+  }
+  .product-about {
+    position: absolute;
+    top: 330px;
+    width: 360px;
+    height: 276px;
+    text-align: center;
+    background: #eeeeee;
+  }
+  .product-about h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .product-about p {
+    width: 200px;
+    margin-left: 80px;
+  }
+  .product-about a {
+    width: 200px;
+    height: 33px;
+    font-size: 16px;
+    margin-top: 32px;
+    padding: 0;
+    padding-top: 17px;
+    text-transform: uppercase;
+  }
   /*Button*/
 /*Main*/
 
