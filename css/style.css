@@ -369,8 +369,8 @@ input[type="checkbox"]:checked+label:after {
 .sort-title {
     display: inline-block;
     width: 160px;
-    margin-right: 240px;
     margin-top: 60px;
+    padding-left: 22px;
     margin-bottom: 59px;
     font-size: 18px;
     font-weight: bold;
@@ -405,6 +405,7 @@ input[type="checkbox"]:checked+label:after {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     cursor: pointer;
+    opacity: 1;
 }
 .product-card:nth-child(odd) {
     display: inline-block;
@@ -419,6 +420,7 @@ input[type="checkbox"]:checked+label:after {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     cursor: pointer;
+    opacity: 1;
 }
 /*index-content-center*/
 /*index-content-request*/
@@ -1132,4 +1134,10 @@ sup {
 }
 .page-on {
     border-bottom: 3px solid red;
+}
+a.non-active {
+  opacity: 0.3;
+}
+.active {
+  opacity: 1;
 }
