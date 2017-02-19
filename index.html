@@ -6,71 +6,73 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,500&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="header container">
+            <div class="container">
 
-            <div class="logo-nerds">
-                <a href="index.html" class="btn-logo"><img src="img/nerds-logo.png" width="160" height="65" alt="NERDS"></a>
-            </div>
-
-            <nav class="main-navigation">
-                <ul class="navigation">
-                    <li>
-                        <a href="#" class="btn-nav">Студия</a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-nav">Клиенты</a>
-                    </li>
-                    <li>
-                        <a href="inner.html" class="btn-nav">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-nav">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="cart">
-                <a href="#" class="btn-nav">Корзина</a>
-            </div>
-        </div>
-
-        <div class="slider">
-            <div class="slider-controls">
-                <i class="active"></i>
-                <i></i>
-                <i></i>
-            </div>
-            <div class="slides">
-                <div class="slide">
-                    <div class="slide-text">
-                        <div class="slide-title">Долго, дорого, скрупулезно</div>
-                        <p>Математически выверенный дизайн
-                            <br> для вашего сайта или мобильного приложения.</p>
-                        <a class="btn" href="#">Узнать больше</a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-text">
-                        <div class="slide-title">Дорого, скрупулезно</div>
-                        <p>Математически выверенный дизайн
-                            <br> для вашего сайта или мобильного приложения.</p>
-                        <a class="btn" href="#">Узнать больше</a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-text">
-                        <div class="slide-title">Скрупулезно</div>
-                        <p>Математически выверенный дизайн
-                            <br> для вашего сайта или мобильного приложения.</p>
-                        <a class="btn" href="#">Узнать больше</a>
-                    </div>
+                <div class="logo-nerds">
+                    <a href="index.html" class="btn-logo"><img src="img/nerds-logo.png" width="160" height="65" alt="NERDS"></a>
                 </div>
 
+                <nav class="main-navigation">
+                    <ul class="navigation">
+                        <li>
+                            <a href="#" class="btn-nav">Студия</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-nav">Клиенты</a>
+                        </li>
+                        <li>
+                            <a href="inner.html" class="btn-nav">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-nav">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="cart">
+                    <a href="#" class="btn-nav cart-ico">Корзина</a>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="slider-controls">
+                    <i class="active"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="slides">
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title">Долго, дорого, скрупулезно</div>
+                            <p>Математически выверенный дизайн
+                                <br> для вашего сайта или мобильного приложения.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title">Дорого, скрупулезно</div>
+                            <p>Математически выверенный дизайн
+                                <br> для вашего сайта или мобильного приложения.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title">Скрупулезно</div>
+                            <p>Математически выверенный дизайн
+                                <br> для вашего сайта или мобильного приложения.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </header>
@@ -121,15 +123,15 @@
                 <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Nerds">
                 <h5>с 2004 года Любим точность во всем:</h5>
                 <div class="about-percent">
-                    <h4>146%</h4>
+                    <h4>146<sup>%</sup></h4>
                     <p>Уровень самоотдачи</p>
                 </div>
                 <div class="about-percent">
-                    <h4>100%</h4>
+                    <h4>100<sup>%</sup></h4>
                     <p>Соблюдение сроков</p>
                 </div>
                 <div class="about-percent">
-                    <h4>50%</h4>
+                    <h4>50<sup>%</sup></h4>
                     <p>Минимальная предоплата</p>
                 </div>
             </div>
@@ -166,13 +168,15 @@
             <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
 
             <div class="feedback-block clearfix">
-                <button type="submit" class="btn feedback-btn">Отправить</button>
-                <a class="btn feedback-cancel" href="#">Омена</a>
+                <button type="submit" class="btn btn-submit">Отправить</button>
             </div>
             <a href="#" class="feedback-circle-btn"></a>
         </form>
     </div>
     <div class="index-content-map">
+        <div class="mark">
+            <img src="img/map-marker.png" width="231" height="190">
+        </div>
         <div class="contacts">
             <div class="contacts-title">
                 <h4>NЁRDS DESIGN STUDIO</h4>
