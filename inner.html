@@ -11,7 +11,7 @@
 
 <body>
   <header class="main-header">
-      <div class="header container shop">
+      <div class="header container shop clearfix">
           <div class="header-navigation">
 
               <div class="logo-nerds">
@@ -44,11 +44,11 @@
             </div>
         </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
         <div class="index-content-left">
+          <form action="https://echo.htmlacademy.ru" action method="get">
             <div class="index-product-range">
                 <h2>Стоимость:</h2>
-                <form action="https://echo.htmlacademy.ru" method="get">
                     <div class="range-filter">
                         <div class="range-controls">
                             <div class="scale">
@@ -66,27 +66,19 @@
                             </label>
                         </div>
                     </div>
-                </form>
             </div>
-
             <div class="index-product-class-1">
                 <h2>Сетка</h2>
-                <form action="https://echo.htmlacademy.ru" method="get">
-                    <input type="radio" name="Adaptive" id="Adaptive" checked>
+                    <input type="radio" name="class" id="Adaptive" value="Adaptive" checked>
                     <label for="Adaptive">Адаптивная</label>
-                    <br />
 
-                    <input type="radio" name="Fixed" id="Fixed">
+                    <input type="radio" name="class" id="Fixed" value="Fixed">
                     <label for="Fixed">Фиксированная</label>
-                    <br />
 
-                    <input type="radio" name="Rubber" id="Rubber">
+                    <input type="radio" name="class" id="Rubber" value="Rubber">
                     <label for="Rubber">Резиновая</label>
-                    <br />
-                </form>
             </div>
             <div class="index-product-class-2">
-                <form action="https://echo.htmlacademy.ru" method="get">
                     <h2>Особенности</h2>
                     <input type="checkbox" name="slider" id="slider" checked>
                     <label for="slider">Слайдер</label>
@@ -104,8 +96,8 @@
                     <label for="cart">Корзина</label>
 
                     <input type="submit" class="btn gray btn-submit" name="DEMONSTRATE" id="DEMONSTRATE" value="ПОКАЗАТЬ">
-                </form>
             </div>
+            </form>
         </div>
 
         <div class="index-content-center">
@@ -200,7 +192,7 @@
             </div>
         </div>
     </main>
-    <div class="index-content-map">
+    <div class="index-content-map clearfix">
         <div class="mark">
             <img src="img/map-marker.png" alt="Мы" width="231" height="190">
         </div>
@@ -217,7 +209,7 @@
             <a href="feedback.html" class="btn">Напиши нам</a>
         </div>
     </div>
-    <footer class="container">
+    <footer class="container clearfix">
         <div class="footer-social">
             <a href="#" class="social-btn social-btn-vk"><img src="img/vk-icon.png" width="26" height="15" alt="ВКонтакте"></a>
             <a href="#" class="social-btn social-btn-fb"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"></a>

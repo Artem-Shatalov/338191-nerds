@@ -14,9 +14,6 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    content: "";
-    display: table;
-    clear: both;
 }
 .clearfix {
     content: "";
@@ -54,7 +51,6 @@ body {
     margin-right: 200px;
 }
 .main-navigation {
-    display: inline-block;
     float: left;
     height: 65px;
 }
@@ -300,16 +296,16 @@ input[type="checkbox"]+label {
     font-size: 16px;
     font-weight: 400;
 }
-input[type="radio"]+label:after {
+input[type="radio"]+label:before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 7px;
+    left: 0px;
+    top: 10px;
     width: 25px;
     height: 25px;
     background: url(../img/radio-off.png) no-repeat 0 0;
 }
-input[type="radio"]:checked+label:after {
+input[type="radio"]:checked+label:before {
     content: "";
     position: absolute;
     left: 0px;
@@ -317,16 +313,6 @@ input[type="radio"]:checked+label:after {
     width: 25px;
     height: 25px;
     background: url(../img/radio-on.png) no-repeat 0 0;
-}
-input[type="radio"]:disabled+label:after {
-    content: "";
-    position: absolute;
-    opacity: 0.5;
-    left: 0px;
-    top: 10px;
-    width: 25px;
-    height: 25px;
-    background: url(../img/radio-0ff.png) no-repeat 0 0;
 }
 label {
     cursor: pointer;
@@ -432,14 +418,12 @@ input[type="checkbox"]:checked+label:after {
     padding-top: 84px;
 }
 .product {
-    display: inline-block;
     float: left;
     width: 300px;
     min-height: 347px;
     margin-right: 100px;
 }
-.product-last {
-    display: inline-block;
+.product:nth-child(3) {
     float: left;
     width: 300px;
     min-height: 347px;
@@ -564,10 +548,11 @@ a.prod {
     margin-right: 40px;
     vertical-align: middle;
 }
-.logos-last {
-    padding-left: 45px;
+.logos:last-child {
     display: inline-block;
     vertical-align: middle;
+    width: auto;
+    margin-right: auto;
 }
 /*index-content-partners*/
 /*index-content-map*/
@@ -659,7 +644,6 @@ footer.container {
 }
 .footer-social {
     float: left;
-    display: inline-block;
     margin-top: 69px;
     margin-left: 64px;
 }
@@ -667,7 +651,6 @@ footer.container {
 
 .footer-copyright {
     float: left;
-    display: inline-block;
     min-width: 560px;
     margin-top: 50px;
     margin-left: 120px;
