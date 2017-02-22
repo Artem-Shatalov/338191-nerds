@@ -15,7 +15,8 @@
             <div class="header-navigation">
 
                 <div class="logo-nerds">
-                    <a href="index.html" class="btn-logo"><img src="img/nerds-logo.png" width="160" height="65" alt="NERDS"></a>
+                    <a href="index.html" class="btn-logo"><img src="img/nerds-logo.png" width="160" height="65" alt="NERDS">
+                    </a>
                 </div>
 
                 <nav class="main-navigation">
@@ -33,51 +34,61 @@
                             <a href="#" class="btn-nav">Контакты</a>
                         </li>
                     </ul>
+                    <div class="cart">
+                        <a href="#" class="btn-nav cart-ico">Корзина</a>
+                    </div>
                 </nav>
-
-                <div class="cart">
-                    <a href="#" class="btn-nav cart-ico">Корзина</a>
-                </div>
             </div>
 
-            <div class="slider">
+            <section class="slider">
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
                 <div class="slider-controls">
-                    <i class="active"></i>
-                    <i></i>
-                    <i></i>
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
                 </div>
                 <div class="slides">
                     <div class="slide">
-                        <div class="slide-text">
-                            <div class="slide-title">Долго, дорого, скрупулезно</div>
-                            <p>Математически выверенный дизайн
-                                <br> для вашего сайта или мобильного приложения.</p>
-                            <a class="btn" href="#">Узнать больше</a>
+                        <div class="slide-info">
+                            <div class="slide-title">Долго, дорого, скрупулезно.</div>
+                            <p>
+                                Математически выверенный дизайн
+                                <br />для вашего сайта или мобильного приложения.
+                            </p>
+                            <a class="btn slider-btn" href="#">Узнать больше</a>
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="slide-text">
-                            <div class="slide-title">Дорого, скрупулезно</div>
-                            <p>Математически выверенный дизайн
-                                <br> для вашего сайта или мобильного приложения.</p>
-                            <a class="btn" href="#">Узнать больше</a>
+                        <div class="slide-info">
+                            <div class="slide-title">Любим математику как никто другой</div>
+                            <p>
+                                Никакого креатива, только математические формулы
+                                <br />для расчета идеальных пропорций.
+                            </p>
+                            <a class="btn slider-btn" href="#">Узнать больше</a>
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="slide-text">
-                            <div class="slide-title">Скрупулезно</div>
-                            <p>Математически выверенный дизайн
-                                <br> для вашего сайта или мобильного приложения.</p>
-                            <a class="btn" href="#">Узнать больше</a>
+                        <div class="slide-info">
+                            <div class="slide-title">
+                                Только ночь,
+                                <br />только хардкор
+                            </div>
+                            <p>
+                                Работать днем, как все? Мы против этого.
+                                <br />Ближе к полуночи работа только начинается.
+                            </p>
+                            <a class="btn slider-btn" href="#">Узнать больше</a>
                         </div>
                     </div>
-
                 </div>
-            </div>
+            </section>
         </div>
     </header>
     <main class="container">
-        <div class="index-content-request">
+        <div class="index-content-request clearfix">
             <div class="product">
                 <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
                 <div class="product-title">
@@ -106,7 +117,7 @@
             </div>
         </div>
 
-        <div class="index-content-about">
+        <div class="index-content-about clearfix">
             <div class="content-about-left">
                 <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h1>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -122,27 +133,31 @@
             <div class="content-about-right">
                 <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Nerds">
                 <h5>с 2004 года Любим точность во всем:</h5>
-                <div class="statistics">
-                <div class="about-percent">
-                    <h4>146<sup>%</sup></h4>
-                    <p>Уровень самоотдачи</p>
+                <div class="statistics clearfix">
+                    <div class="about-percent">
+                        <h4>146<sup>%</sup></h4>
+                        <p>Уровень самоотдачи</p>
+                    </div>
+                    <div class="about-percent">
+                        <h4>100<sup>%</sup></h4>
+                        <p>Соблюдение сроков</p>
+                    </div>
+                    <div class="about-percent">
+                        <h4>50<sup>%</sup></h4>
+                        <p>Минимальная предоплата</p>
+                    </div>
                 </div>
-                <div class="about-percent">
-                    <h4>100<sup>%</sup></h4>
-                    <p>Соблюдение сроков</p>
-                </div>
-                <div class="about-percent">
-                    <h4>50<sup>%</sup></h4>
-                    <p>Минимальная предоплата</p>
-                </div>
-              </div>
             </div>
         </div>
-        <div class="index-content-partners">
-                <a href="#" class="logos btn-logo-1"><img src="img/logo-1-on.png" width="199" height="68" alt="html-academy"></a>
-                <a href="#" class="logos btn-logo-2"><img src="img/logo-2-on.png" width="209" height="90" alt="BORODINSKI"></a>
-                <a href="#" class="logos btn-logo-3"><img src="img/logo-3-on.png" width="185" height="52" alt="PINK"></a>
-                <a href="#" class="logos btn-logo-5"><img src="img/logo-4-on.png" width="173" height="84" alt="MISHKA"></a>
+        <div class="index-content-partners clearfix">
+            <a href="#" class="logos btn-logo-1"><img src="img/logo-1-on.png" width="199" height="68" alt="html-academy">
+            </a>
+            <a href="#" class="logos btn-logo-2"><img src="img/logo-2-on.png" width="209" height="90" alt="BORODINSKI">
+            </a>
+            <a href="#" class="logos btn-logo-3"><img src="img/logo-3-on.png" width="185" height="52" alt="PINK">
+            </a>
+            <a href="#" class="logos btn-logo-5"><img src="img/logo-4-on.png" width="173" height="84" alt="MISHKA">
+            </a>
         </div>
     </main>
     <div class="feedback">
@@ -186,9 +201,12 @@
     </div>
     <footer class="container clearfix">
         <div class="footer-social">
-            <a href="#" class="social-btn social-btn-vk"><img src="img/vk-icon.png" width="26" height="15" alt="ВКонтакте"></a>
-            <a href="#" class="social-btn social-btn-fb"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"></a>
-            <a href="#" class="social-btn social-btn-inst"><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм"></a>
+            <a href="#" class="social-btn social-btn-vk"><img src="img/vk-icon.png" width="26" height="15" alt="ВКонтакте">
+            </a>
+            <a href="#" class="social-btn social-btn-fb"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук">
+            </a>
+            <a href="#" class="social-btn social-btn-inst"><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм">
+            </a>
         </div>
         <div class="footer-copyright">
             <h2>Давайте дружить, это выгодно!</h2>
